@@ -10,7 +10,7 @@ defaults write com.apple.dock mineffect scale
 defaults write com.apple.dock tilesize -int 46
 
 # Position the dock on the left hand side
-defaults write com.apple.dock orientation left
+defaults write com.apple.dock orientation bottom
 
 # Hide the dock automatically
 defaults write com.apple.dock autohide -bool true

@@ -3,6 +3,7 @@
 packages=(
     bower
     gulp
+    pm2
 )
 
 for p in "${packages[@]}"

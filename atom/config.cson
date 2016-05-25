@@ -1,120 +1,156 @@
 "*":
-  "advanced-open-file":
-    createDirectories: true
-  "atom-autocomplete-php": {}
-  "atom-material-ui":
-    colors:
-      abaseColor:
-        red: 96
-        green: 125
-        blue: 139
-        alpha: 1
-      predefinedColor: "Blue Grey"
-    fonts:
-      fontSize: 15
-    tabs:
-      compactTabs: true
-    treeView:
-      compactList: true
-    ui:
-      animations: false
-      panelContrast: true
-  "autocomplete-plus":
-    autoActivationDelay: 200
-    confirmCompletion: "enter"
-    maxVisibleSuggestions: 6
-    suggestionListFollows: "Cursor"
-  "bracket-matcher":
-    autocompleteBrackets: false
-    autocompleteSmartQuotes: false
+  "atom-beautify":
+    general:
+      _analyticsUserId: "0029b309-a045-493b-81a5-69746fb383cb"
+    js:
+      end_with_newline: true
+      keep_function_indentation: true
+      space_after_anon_function: true
+  "atom-lint": {}
+  "autocomplete-plus": {}
+  autosave:
+    enabled: true
+  build: {}
+  "collaborative-edit":
+    DocumentName: "ServerStartTest.spec.js"
   core:
     disabledPackages: [
-      "archive-view"
-      "welcome"
-      "php-cs-fixer"
-      "svg-preview"
-      "metrics"
-      "language-vue-component"
-      "advanced-open-file"
-      "atom-autocomplete-php"
-      "autocomplete-paths"
-      "editorconfig"
-      "vim-mode"
-      "about"
-      "autocomplete-atom-api"
-      "autosave"
-      "background-tips"
-      "bookmarks"
-      "deprecation-cop"
-      "dev-live-reload"
       "exception-reporting"
-      "git-diff"
-      "grammar-selector"
-      "incompatible-packages"
-      "keybinding-resolver"
-      "link"
-      "markdown-preview"
-      "notifications"
-      "open-on-github"
-      "package-generator"
-      "spell-check"
-      "styleguide"
-      "timecop"
-      "update-package-dependencies"
-      "language-gherkin"
+      "metrics"
+      "jshint"
+      "language-javascript-jsx"
+      "js-autoimport"
+      "symbol-gen"
+      "search"
+      "npm-docs"
+      "minimap-selection"
+      "minimap-highlight-selected"
+      "minimap-git-diff"
+      "minimap-find-and-replace"
+      "minimap-bookmarks"
+      "minimap-autohide"
+      "compare-files"
+      "jsformat"
+      "language-html-swig"
+      "language-jade"
+      "node-resolver"
+      "javascript-snippets"
+      "welcome"
       "symbols-view"
-      "line-ending-selector"
-      "encoding-selector"
     ]
-    openEmptyEditorOnStart: false
-    projectHome: "~/code"
+    excludeVcsIgnoredPaths: false
+    hideGitIgnoredFiles: true
+    ignoredNames: [
+      ".bundle"
+      ".git"
+      "log"
+      "repositories"
+      "tmp"
+      "vendor"
+    ]
     themes: [
-      "atom-material-ui"
-      "duotone-dark-syntax"
+      "one-dark-ui"
+      "base16-tomorrow-dark-theme"
     ]
-  docblockr:
-    align_tags: "shallow"
   editor:
-    fontFamily: "Fira Code"
-    fontSize: 15
+    fontFamily: "Menlo"
+    fontSize: 12
     invisibles: {}
-    lineHeight: 1.8
+    preferredLineLength: 100
     showIndentGuide: true
     showInvisibles: true
     tabLength: 4
-    tabType: "soft"
-  "exception-reporting":
-    userId: "60eaadca-56e0-5abb-e08e-d746684a9aff"
-  "file-icons": {}
+  "fuzzy-finder": {}
+  "git-blame":
+    customCommitUrlTemplateString: "https://github.intuit.com/<%- project %>/<%- repo %>/commit/<%- revision %>"
+    useCustomUrlTemplateIfStandardRemotesFail: true
+  "git-blame-plus":
+    customCommitUrlTemplateString: "https://github.intuit.com/<%- project %>/<%- repo %>/commit/<%- revision %>"
+    useCustomUrlTemplateIfStandardRemotesFail: true
+  "git-diff":
+    showIconsInEditorGutter: true
+  "git-plus": {}
+  "git-projects":
+    ignoredPath: "/Users/kbrown12/dev/qbo;"
+    rootPath: "/Users/kbrown12/dev/"
+  "grunt-runner":
+    gruntPaths: [
+      "/usr/local/bin/grunt"
+    ]
+  jsformat:
+    format_on_save: false
+    space_after_anon_function: true
   linter:
-    showErrorPanel: false
-    showErrorTabFile: false
-    showErrorTabProject: false
-  "linter-php": {}
-  "linter-phpcs":
-    executablePath: "/Users/robertrhoades/.composer/vendor/bin/phpcs"
-  "markdown-preview": {}
-  metrics:
-    userId: "3150e207446e4ef590937ee0db280a50927ff288"
-  "package-generator":
-    createInDevMode: true
-  "php-cs-fixer":
-    executablePath: "/Users/robertrhoades/.composer/vendor/bin/php-cs-fixer"
+    ignoredLinterErrors: [
+      "jshint"
+    ]
+    showInfoMessages: true
+    statusBar: "Show error if the cursor is in range"
+    subtleLinterErrors: [
+      "jscs"
+      "shellcheck"
+    ]
+  "linter-eslint":
+    disableWhenNoEslintrcFileInPath: true
+    globalNodePath: "/usr/local/bin"
+  "linter-jscs":
+    messageType: "error"
+    onlyConfig: true
+  "linter-jshint":
+    disableWhenNoJshintrcFileInPath: true
+  "linter-scss-lint":
+    executablePath: "/Users/kbrown12/.rvm/gems/ruby-1.9.3-p429/bin/scss-lint"
+  "local-history":
+    difftoolCommand: "opendiff \"{current-file}\" \"{revision-file}\""
+  "merge-conflicts": {}
+  minimap:
+    plugins:
+      bookmarks: true
+      "find-and-replace": true
+      "git-diff": true
+      "highlight-selected": true
+      "minimap-autohide": true
+      selection: true
+  motepair: {}
+  "one-dark-ui": {}
   pigments: {}
+  react: {}
   "release-notes":
-    viewedVersion: "0.81.0"
-  "tree-view":
-    hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
-    squashDirectoryNames: true
-  "vim-mode": {}
+    viewedVersion: "0.89.0"
+  "spell-check":
+    grammars: [
+      "text.plain"
+      "source.gfm"
+      "text.git-commit"
+    ]
+  "status-bar": {}
+  tabs:
+    enableVcsColoring: true
+    tabScrolling: true
+    usePreviewTabs: true
+  term2: {}
+  "terminal-panel": {}
+  "terminal-status": {}
+  "todo-show": {}
+  "tree-view": {}
   welcome:
     showOnStartup: false
-  "writer-syntax":
-    themeVariant: "Dark"
-".css.scss.source":
+".diff.source":
   editor:
-    preferredLineLength: 120
-".sass.source":
+    preferredLineLength: 100
+".html.swig.text":
   editor:
-    preferredLineLength: 120
+    preferredLineLength: 100
+".ini.source":
+  editor:
+    autoIndent: true
+    preferredLineLength: 100
+".js.jsx.react.source":
+  editor:
+    preferredLineLength: 100
+".js.jsx.source":
+  editor:
+    preferredLineLength: 100
+".js.source.subtlegradient":
+  editor:
+    preferredLineLength: 100

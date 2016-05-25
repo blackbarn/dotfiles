@@ -7,14 +7,17 @@ source osx.sh
 # Install Homebrew Packages
 source brew.sh
 
+source npm.sh
+
 # Install Ruby & Gems
-source gem.sh
+#source gem.sh
 
 # Install Atom Packages
-apm install --packages-file=atom/packages.txt
-
+if [ "$1" == "apm" ]; then
+  apm install --packages-file=atom/packages.txt
+fi
 # Install Vagrant Plugins
-vagrant plugin install vagrant-hostsupdater
+#vagrant plugin install vagrant-hostsupdater
 
 # Configure git config & ignore
 git config --global include.path $DOTFILES/git/.gitconfig
@@ -31,4 +34,4 @@ mkdir -v ~/.atom
 ln -vsf $DOTFILES/atom/keymap.cson $DOTFILES/atom/config.cson $DOTFILES/atom/styles.less  ~/.atom
 
 mkdir -pv ~/.config/fish
-ln -svf $DOTFILES/fish/config.fish $DOTFILES/fish/functions ~/.config/fish
+ln -svf $DOTFILES/fish/aliases.fish $DOTFILES/fish/fishfile $DOTFILES/fish/config.fish $DOTFILES/fish/functions ~/.config/fish

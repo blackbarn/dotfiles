@@ -1,36 +1,26 @@
 #!/usr/bin/env bash
 
 packages=(
-    ansible
     brew-cask
-    composer
     fish
+    fisherman
     git
     httpie
-    mysql
     node
-    php70
-    php70-mcrypt
-    php70-xdebug
-    rbenv
-    rbenv-gem-rehash
-    ruby-build
     siege
     rmtrash
     wget
 )
 
 apps=(
-    alfred
+#    alfred
     atom
     firefox
     licecap
     google-chrome
-    mongohub
     spectacle
-    sequel-pro
+#    sequel-pro
     the-unarchiver
-    vagrant
     virtualbox
 )
 
