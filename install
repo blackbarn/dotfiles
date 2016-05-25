@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 DOTFILES=$(pwd)
 
-# Set OSX Defaults
-source osx.sh
-
-# Install Homebrew Packages
-source brew.sh
-
-source npm.sh
+if [ "$(uname)" == "Darwin" ]; then
+  # Set OSX Defaults
+  source osx.sh
+  # Install Homebrew Packages
+  source brew.sh
+  source npm.sh
+fi
 
 # Install Ruby & Gems
 #source gem.sh

@@ -26,7 +26,13 @@ apps=(
 
 # Install homebrew
 if ! [ -x "$(command -v brew)" ]; then
+  if [ "$(uname)" == "Darwin" ]; then
+    # Do something under Mac OS X platform        
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    # Do something under GNU/Linux platform
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
+  fi
 fi;
 
 # Tapping

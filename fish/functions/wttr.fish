@@ -1,1 +1,1 @@
-/Users/kbrown12/.config/fisherman/wttr/functions/wttr.fish
+/home/kyle/.config/fisherman/wttr/functions/wttr.fish
