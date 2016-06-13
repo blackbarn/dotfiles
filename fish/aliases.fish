@@ -7,7 +7,7 @@ alias dl "docker ps -l -q"
 alias dps "docker ps | cut -c-(tput cols)"
 
 # Get process included stop container
-alias dpa "docker ps -a"
+alias dpa "docker ps -a | cut -c-(tput cols)"
 
 # Get images
 alias di "docker images"
