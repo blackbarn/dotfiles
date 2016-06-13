@@ -4,6 +4,7 @@ packages=(
     brew-cask
     fish
     fisherman
+    autojump
     git
     httpie
     node

@@ -4,7 +4,7 @@ alias del "rmtrash"
 alias dl "docker ps -l -q"
 
 # Get container process
-alias dps "docker ps"
+alias dps "docker ps | cut -c-(tput cols)"
 
 # Get process included stop container
 alias dpa "docker ps -a"

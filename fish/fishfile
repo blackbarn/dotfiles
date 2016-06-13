@@ -1,3 +1,4 @@
+fisherman/autojump
 oh-my-fish/plugin-await
 fisherman/cprintf
 brgmnn/fish-docker-compose
@@ -8,4 +9,3 @@ fisherman/host_info
 fisherman/logger
 oh-my-fish/plugin-ssh
 oh-my-fish/plugin-wttr
-oh-my-fish/plugin-z

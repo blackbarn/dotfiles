@@ -37,7 +37,7 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
 killall SystemUIServer
 
-# Disable notifications
-launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
+# Enable notifications
+launchctl load -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
 killall NotificationCenter
 killall SystemUIServer
